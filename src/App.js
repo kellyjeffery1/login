@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import Login from './components/login.component';
-import SignUp from './components/signup.component';
+import Login from './component/login.component';
+// import SignUp from './component/signup.component';
 
 function App() {
 	return (
@@ -13,9 +12,7 @@ function App() {
 			<div className="App">
 				<nav className="navbar navbar-expand-lg navbar-light fixed-top">
 					<div className="container">
-						<Link className="navbar-brand" to={'/sign-in'}>
-							positronX.io
-						</Link>
+						<Link className="navbar-brand" to={'/sign-in'} />
 						<div className="collapse navbar-collapse" id="navbarTogglerDemo02">
 							<ul className="navbar-nav ml-auto">
 								<li className="nav-item">
